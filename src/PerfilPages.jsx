@@ -6,14 +6,10 @@ export const PerfilPages = () => {
 
      const handleScroll = () => {
          // Coloca aquí la lógica para manejar el evento de desplazamiento
-        //  if(window.scrollY === 508){
-        //       navigate('/homepage/quiensoypage')
+         if(window.scrollY === 508){
+              navigate('/homepage/quiensoypage')
          
-        // }
-        if(window.scrollY === 495){
-          navigate('/homepage/quiensoypage')
-     
-    }
+        }
        console.log(window.scrollY);
        };
        useEffect(() => {
