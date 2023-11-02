@@ -1,0 +1,72 @@
+body{
+  font-family: "Raleway", sans-serif;
+  background-image: radial-gradient(circle, 
+#04132C, 
+#060f1c);
+
+}
+
+.circulo-perfil-page{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  left: 70%;
+  position: relative;
+  top: 12px;
+}
+.circulo-perfil-nombre-page{
+  left: 60%;
+  position: relative;
+
+  top: 51px;
+  margin: 0;
+  width: 31%
+}
+
+/* .foto-de-perfil-page{
+  max-width: 224%;
+  height: auto;
+  right: 60%;
+  position: relative;
+  top: -4px; 
+} */
+.cuadroDeRedes{
+  width: 30%;
+  height: 50%;
+  background-color: #003F7A;
+
+
+}
+.scroll-container {
+  height: 181vh; /* Ajusta la altura según tus necesidades */
+ 
+
+  /* Agrega cualquier otro estilo que desees para el contenedor */
+}
+.scroll-container2{
+  height: 238vh;
+  
+}
+.scroll-container3 {
+  height: 300vh;  
+}
+.scroll-container4 {
+  height: 350vh;  
+
+}
+.trabajo-realizados{
+  position: relative;
+  top: 58%;
+}
+.quienSoyPage{
+  top: 124%!important;
+  position: relative;
+}
+.acomodar{
+  top: -281px;
+  position: relative;
+}
+.iconosframwork{
+  top: 50%;
+  position: relative;
+}
