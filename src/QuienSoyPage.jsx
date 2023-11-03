@@ -5,28 +5,25 @@ import { useNavigate } from "react-router-dom";
 export const QuienSoyPage = () => {
      const navigate = useNavigate()
 
-    const handleScroll = () => {
-      // Coloca aquí la lógica para manejar el evento de desplazamiento
-      console.log(window.scrollY);
-      if(window.scrollY === 0){
-          navigate('/homePage')
+  //   const handleScroll = () => {
+  
+  //     if(window.scrollY === 0){
+  //         navigate('/homePage')
      
-    }
-     if(window.scrollY === 865){
+  //   }
+  //    if(window.scrollY === 865){
     
     
-       navigate('/homePage/quienSoyPage/CuadroDeTecnologias')
+  //      navigate('/homePage/quienSoyPage/CuadroDeTecnologias')
 
-     }
-   };
-    useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
-     return () => {
-       window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
-
-
+  //    }
+  //  };
+    // useEffect(() => {
+    //   window.addEventListener('scroll', handleScroll);
+    //  return () => {
+    //    window.removeEventListener('scroll', handleScroll);
+    //   };
+    // }, []);
 
     const descargarCurriculum = async() => {
         const response = await fetch('curriculum.pdf');
@@ -41,7 +38,20 @@ export const QuienSoyPage = () => {
     
         link.click();
       }
+
+
+    const next = () => {
+        navigate('/homePage/quienSoyPage/CuadroDeTecnologias');
+    }
+    const back = () => {
+      navigate('/homePage');
+  }
+
+
+
+
   return (
+    <>
      <div className='bg-gradient-blue-green container portafolio scroll-container2 ' >
      <div className=''>
      <article className='text-light'>
@@ -78,6 +88,13 @@ export const QuienSoyPage = () => {
    
      </div>
      </div>
-   
+
+     <div class="boton-back me-5  animate__animated  animate__flipInX">
+    <button className='btn btn-dark boton-back-boton' onClick={back}><i class="bi bi-arrow-up-circle"></i></button>
+    </div>
+    <div class="boton-next me-5  animate__animated animate__flipInX">
+    <button className='btn btn-dark boton-next-boton' onClick={next}><i class="bi bi-arrow-down-circle"></i></button>
+    </div>
+    </>
   )
 }

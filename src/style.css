@@ -38,35 +38,74 @@ body{
 
 }
 .scroll-container {
-  height: 181vh; /* Ajusta la altura según tus necesidades */
- 
+  /* height: 181vh; */
+  height: 100vh;
 
   /* Agrega cualquier otro estilo que desees para el contenedor */
 }
 .scroll-container2{
-  height: 238vh;
+  /* height: 238vh; */
+  height: 100vh;
+
   
 }
 .scroll-container3 {
-  height: 300vh;  
+  height: 100vh;  
+  /* height: 300vh;   */
 }
-.scroll-container4 {
+/* .scroll-container4 {
   height: 350vh;  
+  height: 100vh;  
 
-}
-.trabajo-realizados{
+} */
+/* .trabajo-realizados{
   position: relative;
   top: 58%;
-}
-.quienSoyPage{
+} */
+/* .quienSoyPage{
   top: 124%!important;
   position: relative;
-}
-.acomodar{
-  top: -281px;
-  position: relative;
-}
-.iconosframwork{
+} */
+/* .acomodar{ */
+  /* top: -281px;
+  position: relative; */
+/* } */
+/* .iconosframwork{
   top: 50%;
   position: relative;
+} */
+.boton-next{
+  position: absolute;
+  top: 84%;
+  right: 0%;
+}
+.boton-next-boton{
+  font-size: 2rem!important;
+
+}
+.boton-back{
+  position: absolute;
+  top: 5%;
+  right: 0%;
+
+}
+.boton-back-boton{
+  font-size: 2rem!important;
+
+}
+.calidad{
+  transition: transform 0.3s;
+}
+.calidad:hover{
+  transform: scale(1.1);
+  z-index: 2000;
+
+}
+.heros{
+  transition: transform 0.3s;
+}
+.heros:hover{
+  transform: scale(1.1);
+  z-index: 2000;
+
 }
