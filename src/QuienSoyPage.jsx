@@ -26,7 +26,7 @@ export const QuienSoyPage = () => {
     // }, []);
 
     const descargarCurriculum = async() => {
-        const response = await fetch('curriculum.pdf');
+        const response = await fetch('/curriculum.pdf');
         const blob = await response.blob();
     
         const link = document.createElement('a');
