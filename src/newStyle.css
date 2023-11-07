@@ -21,5 +21,5 @@
     transform: scale(1.1);
     /* background-color: red;  */
    
-   content: url('imagen-junior_1.png'); 
+   content: url('/imagen-junior_1.png'); 
 }
