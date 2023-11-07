@@ -71,11 +71,11 @@ export const Portafolios = () => {
         <img src="Mesa de trabajo 20_1.png" alt=""  className='img-fluid  ' />
          <h1 className=' ' >Juan Camilo Millan Cuellar</h1>
          <div className='raw'>
-            <a href="https://github.com/camiloM189"> 
-                <img src="github.png" className='col-2'   alt="github" /></a>
-            <a href="mailto:jcamilomillan18912@gmail.com">
+            <a href="https://github.com/camiloM189" target="_blank"> 
+                <img src="github.png" className='col-2'   alt="github"/></a>
+            <a href="mailto:jcamilomillan18912@gmail.com" target="_blank">
                 <img src="gmail.png"  className='col-2' alt="gmail" /></a> 
-            <a href="https://www.linkedin.com/in/juan-camilo-millan-cuellar-a78088248/">
+            <a href="https://www.linkedin.com/in/juan-camilo-millan-cuellar-a78088248/" target="_blank">
                 <img src="link.png"   className='col-2' alt="link" /></a>   
         </div>
     </div> 
