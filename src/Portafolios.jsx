@@ -84,9 +84,9 @@ export const Portafolios = () => {
 
   </div>
   </div> 
-  
-  <div className='bg-gradient-blue-green container portafolio scroll-container2  ' >
-     <div className=''>
+  {/* quite el scroll container2 */}
+  <div className='bg-gradient-blue-green container portafolio scroll-container2'>
+   
      <article className='text-light'>
   
        {/* <div class="position-absolute top-50 start-50 quienSoyPage translate-middle portafolio-2 "> */}
@@ -101,6 +101,7 @@ export const Portafolios = () => {
      combina con un aprendizaje rápido, <br /> responsabilidad y 
      dedicación, lo que me impulsa a buscar la excelencia 
      en <br />
+     
       cada tarea que emprendo.</p>
   
 
@@ -118,7 +119,7 @@ export const Portafolios = () => {
           Mi pasión por el diseño y el desarrollo web me <br />
            motiva a ofrecer 
           soluciones de calidad en cada proyecto que abordo.</p>
-     <div className='quien mb-5 mt-2'>
+     <div className='quien  mt-2'>
 
      <button className='btn btn-primary  animate__animated animate__backInDown d-none curriculum-botton' id='curriculum' onClick={descargarCurriculum}>Curriculum</button>
 
@@ -127,11 +128,11 @@ export const Portafolios = () => {
      </div>
      </article>
    
-     </div>
+   
      </div>
 
    
-     <div className='bg-gradient-blue-green container portafolio scroll-container3 mb-5 d-none mt-5' id='tecnologias-que-manejo' >
+     <div className='bg-gradient-blue-green container portafolio scroll-container3 mb-5 d-none' id='tecnologias-que-manejo' >
       <h1 className='text-light text-center'>Tecnologias que manejo</h1>
   
     <div className='row iconosframwork  animate__animated animate__backInDown d-none'  id='tecnologias'>
