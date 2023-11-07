@@ -1,3 +1,15 @@
 .portafolio-2{
-    top: 132% !important;
+    /* top: 132% !important; */
+    align-items: center;
+    
+}
+.quien{
+  
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.curriculum-botton{
+  
+    width: 40%;
 }

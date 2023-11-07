@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useState } from 'react';
 import ScrollReveal from 'scrollreveal';
 export const Portafolios = () => {
 
@@ -14,27 +16,57 @@ export const Portafolios = () => {
     
         link.click();
       }
+      const handleScroll = () => {
+        console.log(window.scrollY);
+             if(window.scrollY > 200){
+                
+              const element = document.getElementById('quien-soy');
+              const element2 = document.getElementById('curriculum');
+              const element3 = document.getElementById('text-1');
+              const element4 = document.getElementById('text-2');
 
-      const sr = ScrollReveal({
-        reset: true, // Restablecer las animaciones al desplazarse hacia arriba
-      });
-sr.reveal('.animate__backInDown', {
-  origin: 'bottom',
-  distance: '20px',
-  duration: 1000,
-  scale: 1,
-  opacity: 0,
-  easing: 'ease-in-out',
-  mobile: false, // Activa las animaciones en dispositivos móviles
-});
+              element.classList.remove('d-none');
+              element2.classList.remove('d-none');
+              element3.classList.remove('d-none');
+              element4.classList.remove('d-none');
+              
+
+             }
+       
+             if(window.scrollY >= 627){
+              const element = document.getElementById('tecnologias-que-manejo');
+              const element2 = document.getElementById('tecnologias');
+              element.classList.remove('d-none');
+              element2.classList.remove('d-none');
+             }
+             if(window.scrollY >= 1198){
+              const element = document.getElementById('trabajos-realizados');
+              element.classList.remove('d-none');
+
+              
+             }
+
+             if(window.scrollY === 1625){
+
+             }
+            };
+            useEffect(() => {
+              window.addEventListener('scroll', handleScroll);
+            return () => {
+              window.removeEventListener('scroll', handleScroll);
+            };
+           }, []);
+   
+
 
   return (
     <>
-        
-<div className='animate__animated animate__backInDown acomodar sr'>
-     <div className='bg-gradient-blue-green container portafolio scroll-container ' >
+
+       
+<div className='animate__animated animate__backInDown acomodar ' >
+     <div className='bg-gradient-blue-green container portafolio scroll-container'>
     
-  <article className='text-light ' >
+  <article className='text-light' >
     <div class="position-absolute top-50 start-50 translate-middle text-center " > 
         <img src="Mesa de trabajo 20_1.png" alt=""  className='img-fluid  ' />
          <h1 className=' ' >Juan Camilo Millan Cuellar</h1>
@@ -53,35 +85,42 @@ sr.reveal('.animate__backInDown', {
   </div>
   </div> 
   
-  
-  <div className='bg-gradient-blue-green container portafolio scroll-container2 ' >
+  <div className='bg-gradient-blue-green container portafolio scroll-container2  ' >
      <div className=''>
      <article className='text-light'>
   
-       <div class="position-absolute top-50 start-50 quienSoyPage translate-middle portafolio-2">
-     <h2 className='mb-3  animate__animated animate__backInDown'>¿Quien Soy?</h2>
+       {/* <div class="position-absolute top-50 start-50 quienSoyPage translate-middle portafolio-2 "> */}
+       <div class=" quienSoyPage portafolio-2 row fs-5">
 
-     <p className='justificarTexto animate__animated animate__backInDown'>
+     <h2 className='mb-3  animate__animated animate__backInDown d-none quien' id='quien-soy'>¿Quien Soy?</h2>
+  
+     <p className='justificarTexto animate__animated animate__backInDown d-none quien' id='text-1'>
      Soy un diseñador gráfico con sólidas habilidades
-     en Illustrator y Photoshop. Mi creatividad se 
-     combina con un aprendizaje rápido, responsabilidad y 
+     en Illustrator y <br />
+      Photoshop. Mi creatividad se 
+     combina con un aprendizaje rápido, <br /> responsabilidad y 
      dedicación, lo que me impulsa a buscar la excelencia 
-     en cada tarea que emprendo.</p>
+     en <br />
+      cada tarea que emprendo.</p>
+  
 
        <p className=''>
 
        </p>
       
-        <p className='mt-2 justificarTexto mb-2  animate__animated animate__backInDown'>
+        <p className='mt-2 justificarTexto mb-2  animate__animated animate__backInDown d-none quien' id='text-2'>
          Además, tengo experiencia como desarrollador
-         Front-End junior, donde he trabajado con frameworks como React,
-          Redux Toolking y React-Router. También cuento con conocimientos 
-          en el uso de bibliotecas de diseño, incluyendo Bootstrap. 
-          Mi pasión por el diseño y el desarrollo web me motiva a ofrecer 
+         Front-End junior, donde he <br />
+          trabajado con frameworks como React,
+          Redux Toolking y React-Router. <br />
+           También cuento con conocimientos 
+          en el uso de bibliotecas de diseño, <br /> incluyendo Bootstrap. 
+          Mi pasión por el diseño y el desarrollo web me <br />
+           motiva a ofrecer 
           soluciones de calidad en cada proyecto que abordo.</p>
-     <div className='ms-1'>
+     <div className='quien mb-5 mt-2'>
 
-     <button className='btn btn-primary  animate__animated animate__backInDown' onClick={descargarCurriculum}>Curriculum</button>
+     <button className='btn btn-primary  animate__animated animate__backInDown d-none curriculum-botton' id='curriculum' onClick={descargarCurriculum}>Curriculum</button>
 
    
      </div>
@@ -92,10 +131,10 @@ sr.reveal('.animate__backInDown', {
      </div>
 
    
-     <div className='bg-gradient-blue-green container portafolio scroll-container3' >
+     <div className='bg-gradient-blue-green container portafolio scroll-container3 mb-5 d-none mt-5' id='tecnologias-que-manejo' >
       <h1 className='text-light text-center'>Tecnologias que manejo</h1>
   
-    <div className='row iconosframwork  animate__animated animate__backInDown'>
+    <div className='row iconosframwork  animate__animated animate__backInDown d-none'  id='tecnologias'>
     
     <img src="/html.png" alt="html" className='img-fluid  col-lg-4  col-6 html1'/>
     <img src="/react.png" alt="react" className='img-fluid  col-lg-4 col-6 html1'/>
@@ -106,7 +145,7 @@ sr.reveal('.animate__backInDown', {
     </div>
     </div>
 
-    <div className="container scroll-container4  mt-5 mb-5 animate__animated animate__rotateInUpRight">
+    <div className="container scroll-container4  mt-5 animate__animated animate__rotateInUpRight d-none" id='trabajos-realizados'>
   <h1 className='text-light mb-5'>Trabajos Realizados</h1>
    <section className="row  align-items-lg-center trabajo-realizados">
     
@@ -164,6 +203,7 @@ sr.reveal('.animate__backInDown', {
       
       
       </div>
+      
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         <a href="https://hero-barf.onrender.com"><button type="button" className='btn btn-primary'>Ver Pagina</button></a>
@@ -203,7 +243,6 @@ sr.reveal('.animate__backInDown', {
 </div>
         
 
-         
           
 
         
