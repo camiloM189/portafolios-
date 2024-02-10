@@ -1,0 +1,111 @@
+body{
+  font-family: "Raleway", sans-serif;
+  background-image: radial-gradient(circle, 
+#04132C, 
+#060f1c);
+
+}
+
+.circulo-perfil-page{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  left: 70%;
+  position: relative;
+  top: 12px;
+}
+.circulo-perfil-nombre-page{
+  left: 60%;
+  position: relative;
+
+  top: 51px;
+  margin: 0;
+  width: 31%
+}
+
+/* .foto-de-perfil-page{
+  max-width: 224%;
+  height: auto;
+  right: 60%;
+  position: relative;
+  top: -4px; 
+} */
+.cuadroDeRedes{
+  width: 30%;
+  height: 50%;
+  background-color: #003F7A;
+
+
+}
+.scroll-container {
+  /* height: 181vh; */
+  height: 100vh;
+
+  /* Agrega cualquier otro estilo que desees para el contenedor */
+}
+.scroll-container2{
+
+  height: 100vh;
+
+  
+}
+.scroll-container3 {
+  height: 100vh;  
+  /* height: 300vh;   */
+}
+.scroll-container4 {
+  /* height: 350vh;   */
+  height: 100vh;  
+
+} 
+/* .trabajo-realizados{
+  position: relative;
+  top: 58%;
+} */
+/* .quienSoyPage{
+  top: 124%!important;
+  position: relative;
+} */
+/* .acomodar{ */
+  /* top: -281px;
+  position: relative; */
+/* } */
+/* .iconosframwork{
+  top: 50%;
+  position: relative;
+} */
+.boton-next{
+  position: absolute;
+  top: 84%;
+  right: 0%;
+}
+.boton-next-boton{
+  font-size: 2rem!important;
+
+}
+.boton-back{
+  position: absolute;
+  top: 5%;
+  right: 0%;
+
+}
+.boton-back-boton{
+  font-size: 2rem!important;
+
+}
+.calidad{
+  transition: transform 0.3s;
+}
+.calidad:hover{
+  transform: scale(1.1);
+  z-index: 2000;
+
+}
+.heros{
+  transition: transform 0.3s;
+}
+.heros:hover{
+  transform: scale(1.1);
+  z-index: 2000;
+
+}
