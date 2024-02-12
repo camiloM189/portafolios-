@@ -70,6 +70,7 @@ export const Portafolios = () => {
     <div class="position-absolute top-50 start-50 translate-middle text-center " > 
         <img src="Mesa de trabajo 20_1.png" alt=""  className='img-fluid  ' />
          <h1 className=' ' >Juan Camilo Millan Cuellar</h1>
+         <h4>Prueba</h4>
          <div className='raw'>
             <a href="https://github.com/camiloM189" target="_blank"> 
                 <img src="github.png" className='col-2'   alt="github"/></a>
@@ -84,12 +85,12 @@ export const Portafolios = () => {
 
   </div>
   </div> 
-  {/* quite el scroll container2 */}
+ 
   <div className='bg-gradient-blue-green container portafolio scroll-container2'>
    
      <article className='text-light'>
   
-       {/* <div class="position-absolute top-50 start-50 quienSoyPage translate-middle portafolio-2 "> */}
+     
        <div class=" quienSoyPage portafolio-2 row fs-5">
 
      <h2 className='mb-3  animate__animated animate__backInDown d-none quien' id='quien-soy'>¿Quien Soy?</h2>

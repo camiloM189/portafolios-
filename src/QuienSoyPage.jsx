@@ -5,26 +5,6 @@ import { useNavigate } from "react-router-dom";
 export const QuienSoyPage = () => {
      const navigate = useNavigate()
 
-  //   const handleScroll = () => {
-  
-  //     if(window.scrollY === 0){
-  //         navigate('/homePage')
-     
-  //   }
-  //    if(window.scrollY === 865){
-    
-    
-  //      navigate('/homePage/quienSoyPage/CuadroDeTecnologias')
-
-  //    }
-  //  };
-    // useEffect(() => {
-    //   window.addEventListener('scroll', handleScroll);
-    //  return () => {
-    //    window.removeEventListener('scroll', handleScroll);
-    //   };
-    // }, []);
-
     const descargarCurriculum = async() => {
         const response = await fetch('/curriculum.pdf');
         const blob = await response.blob();
@@ -58,7 +38,6 @@ export const QuienSoyPage = () => {
   
        <div class="position-absolute top-50 start-50 quienSoyPage translate-middle ">
      <h2 className='mb-3  animate__animated animate__backInDown'>¿Quien Soy?</h2>
-
      <p className='justificarTexto animate__animated animate__backInDown '>
      Soy un diseñador gráfico con sólidas habilidades
      en Illustrator y Photoshop. Mi creatividad se 
