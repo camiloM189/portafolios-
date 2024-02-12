@@ -70,7 +70,6 @@ export const Portafolios = () => {
     <div class="position-absolute top-50 start-50 translate-middle text-center " > 
         <img src="Mesa de trabajo 20_1.png" alt=""  className='img-fluid  ' />
          <h1 className=' ' >Juan Camilo Millan Cuellar</h1>
-         <h4>Prueba</h4>
          <div className='raw'>
             <a href="https://github.com/camiloM189" target="_blank"> 
                 <img src="github.png" className='col-2'   alt="github"/></a>
